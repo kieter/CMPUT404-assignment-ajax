@@ -23,6 +23,7 @@ Kieter's solution was made in collaboration with:
 Kieter also referenced: 
 * https://stackoverflow.com/questions/14343812/redirecting-to-url-in-flask
 * https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-
+* https://docs.python.org/2/library/json.html
+* https://css-tricks.com/examples/RandomHexColor/
 
 

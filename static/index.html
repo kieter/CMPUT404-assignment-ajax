@@ -232,18 +232,20 @@ mouse = (function() {
 
 // Add the application specific mouse listeners!
 //XXX: TODO Make these prettier!
-mouse.mousedowners.push(function(x,y,clicked,e) {
-    addEntityWithoutName({'x':x,'y':y,'colour':'blue'});
-});
+var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
 
-mouse.mouseuppers.push(function(x,y,clicked,e) {
-    addEntityWithoutName({'x':x,'y':y,'colour':'red'});
+mouse.mousedowners.push(function(x,y,clicked,e) {
+    addEntityWithoutName({'x':x,'y':y,'colour':randomColor, 'radius':5});
 });
 
 mouse.mousedraggers.push(function(x,y,clicked,e) {
-    addEntityWithoutName({'x':x,'y':y,'colour':'green',
-                          'radius':10});
+    addEntityWithoutName({'x':x,'y':y,'colour':randomColor, 'radius':5});
 });
+
+mouse.mouseuppers.push(function(x,y,clicked,e) {
+    addEntityWithoutName({'x':x,'y':y,'colour':randomColor, 'radius':5});
+});
+
 
 
 function update() {
@@ -258,8 +260,8 @@ function update() {
     drawFrame();
 }
 
-// 30 frames per second
-setInterval( update, 1000/30.0);
+// 60 frames per second
+setInterval( update, 1000/144.0);
 
 
 
