@@ -12,4 +12,17 @@ Contributors / Licensing
 
 Generally everything is LICENSE'D under the Apache 2 license by Abram Hindle.
 
+Kieter's solution was made in collaboration with:
+* Owen McLeod
+* Larry (Gary, Gurmeet) Dhillon
+* Michael Paradis
+* René (Frederic) Sauvé-Hoover
+* Mandy Meindersma
+* Cole Mackenzie
+
+Kieter also referenced: 
+* https://stackoverflow.com/questions/14343812/redirecting-to-url-in-flask
+* https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+
+
 
